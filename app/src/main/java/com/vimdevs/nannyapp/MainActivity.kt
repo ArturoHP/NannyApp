@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         initSesionBtn.setOnClickListener{
             //Redirigir a pagina principal
-            if(emailEditText.text.isBlank() && passwordEditText.text.isBlank()){
+            if(emailEditText.text.isEmpty() && passwordEditText.text.isEmpty()){
                 Toast.makeText(applicationContext,"Favor de llenar ambos campos",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
