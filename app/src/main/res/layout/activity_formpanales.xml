@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:crad_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormPanales">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="560dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                crad_view:cardCornerRadius="4dp">
+                <TextView
+                    android:id="@+id/info_text"
+                    android:text="Aqui va NOMB"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:background="#FCC78C"
+                    android:textSize="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/cardbackground"
+                android:layout_gravity="center"
+                android:textAlignment="center">
+                <ImageButton android:id="@+id/panal"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/pa_albebe"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:contentDescription="icono" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40sp"
+                    android:text="Cambio Pañal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalles Importantes"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="¿A que necesidad se debio el cambio de pañal?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <RadioButton
+                    android:id="@+id/Group1R1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/purple_200"
+                    android:checked="true"
+                    android:onClick="RadioButtonClicked"
+                    android:padding="15dp"
+                    android:text="Pipi" />
+
+                <RadioButton
+                    android:id="@+id/Group1R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:padding="15dp"
+                    android:text="Popo" />
+
+                <RadioButton
+                    android:id="@+id/Group1R3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:padding="15dp"
+                    android:text="Popo" />
+            </RadioGroup>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/black"
+                app:dividerThickness="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Color de las heces fecales"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <RadioButton
+                    android:id="@+id/Group2R1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Negro-Verdoso" />
+
+                <RadioButton
+                    android:id="@+id/Group2R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Cafe-Verdoso" />
+
+                <RadioButton
+                    android:id="@+id/Group2R3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Amarillo mostaza" />
+
+                <RadioButton
+                    android:id="@+id/Group2R4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Verde-Brillante" />
+
+                <RadioButton
+                    android:id="@+id/Group2R5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Blanco" />
+
+                <RadioButton
+                    android:id="@+id/Group2R6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Cafe Claro" />
+
+                <RadioButton
+                    android:id="@+id/Group2R7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Rojo-Rosaceo" />
+
+                <RadioButton
+                    android:id="@+id/Group2R8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Cafe" />
+
+                <RadioButton
+                    android:id="@+id/Group2R9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Verde-Oscuro" />
+
+                <RadioButton
+                    android:id="@+id/Group2R10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Negro" />
+            </RadioGroup>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/black"
+                app:dividerThickness="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Consistencia de las heces fecales"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <RadioButton
+                    android:id="@+id/Group3R1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Pegajoso"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/Group3R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Grueso" />
+
+                <RadioButton
+                    android:id="@+id/Group3R3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Seco" />
+
+                <RadioButton
+                    android:id="@+id/Group3R4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Blanda" />
+
+                <RadioButton
+                    android:id="@+id/Group3R5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Granuloso" />
+
+                <RadioButton
+                    android:id="@+id/Group3R6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Acuoso" />
+
+                <RadioButton
+                    android:id="@+id/Group3R7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Con manchas rojas" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp">
+                <Button
+                    android:id="@+id/BotonCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar" />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/BotonGuardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

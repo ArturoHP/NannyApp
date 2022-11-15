@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:crad_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormAlimentos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="560dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            crad_view:cardCornerRadius="4dp">
+            <TextView
+                android:id="@+id/info_text"
+                android:text="Aqui va NOMB"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:background="#FCC78C"
+                android:textSize="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/cardbackground"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+
+            <ImageButton android:id="@+id/panal"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:contentDescription="icono" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:text="Alimentos" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles Importantes"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="¿Qué tipo de leche comió?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/Group1R1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/purple_200"
+                android:checked="true"
+                android:onClick="RadioButtonClicked"
+                android:padding="15dp"
+                android:text="Materna" />
+
+            <RadioButton
+                android:id="@+id/Group1R2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:onClick="RadioButtonClicked"
+                android:padding="15dp"
+                android:text="Formula" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/DatoComida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="Ingrese la cantidad que comio el bebé"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:layout_marginEnd="10dp">
+            <Button
+                android:id="@+id/BotonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/BotonGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
