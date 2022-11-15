@@ -29,6 +29,7 @@
                 <TextView
                     android:id="@+id/info_text"
                     android:text="Aqui va NOMB"
+                    android:textColor="@color/nombre"
                     android:textAlignment="center"
                     android:layout_gravity="center"
                     android:background="#FCC78C"
@@ -49,17 +50,21 @@
                 android:background="@drawable/cardbackground"
                 android:layout_gravity="center"
                 android:textAlignment="center">
-                <ImageButton android:id="@+id/panal"
+
+                <ImageView
+                    android:id="@+id/panal"
+                    android:layout_width="130px"
+                    android:layout_height="130px"
                     android:layout_margin="5dp"
-                    android:src="@drawable/pa_albebe"
-                    android:layout_width="180px"
-                    android:layout_height="180px"
-                    android:contentDescription="icono" />
+                    android:contentDescription="icono"
+                    android:src="@drawable/pa_albebe" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="40sp"
-                    android:text="Cambio Pañal" />
+                    android:text="Cambio Pañal"
+                    android:textColor="@color/rojito"/>
             </LinearLayout>
 
             <TextView
@@ -69,7 +74,8 @@
                 android:textAlignment="center"
                 android:textSize="30dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:textColor="@color/letra"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -91,7 +97,7 @@
                     android:id="@+id/Group1R1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:buttonTint="@color/purple_200"
+                    android:buttonTint="@color/rojito"
                     android:checked="true"
                     android:onClick="RadioButtonClicked"
                     android:padding="15dp"
@@ -104,7 +110,8 @@
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
                     android:padding="15dp"
-                    android:text="Popo" />
+                    android:text="Popo"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group1R3"
@@ -113,7 +120,8 @@
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
                     android:padding="15dp"
-                    android:text="Popo" />
+                    android:text="Popo"
+                    android:buttonTint="@color/rojito"/>
             </RadioGroup>
 
             <com.google.android.material.divider.MaterialDivider
@@ -143,7 +151,8 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:onClick="RadioButtonClicked"
-                    android:text="Negro-Verdoso" />
+                    android:text="Negro-Verdoso"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R2"
@@ -151,7 +160,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Cafe-Verdoso" />
+                    android:text="Cafe-Verdoso"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R3"
@@ -159,7 +169,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Amarillo mostaza" />
+                    android:text="Amarillo mostaza"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R4"
@@ -167,7 +178,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Verde-Brillante" />
+                    android:text="Verde-Brillante"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R5"
@@ -175,7 +187,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Blanco" />
+                    android:text="Blanco"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R6"
@@ -183,7 +196,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Cafe Claro" />
+                    android:text="Cafe Claro"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R7"
@@ -191,7 +205,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Rojo-Rosaceo" />
+                    android:text="Rojo-Rosaceo"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R8"
@@ -199,7 +214,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Cafe" />
+                    android:text="Cafe"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R9"
@@ -207,7 +223,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Verde-Oscuro" />
+                    android:text="Verde-Oscuro"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group2R10"
@@ -215,7 +232,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Negro" />
+                    android:text="Negro"
+                    android:buttonTint="@color/rojito"/>
             </RadioGroup>
 
             <com.google.android.material.divider.MaterialDivider
@@ -247,7 +265,8 @@
                     android:checked="true"
                     android:onClick="RadioButtonClicked"
                     android:text="Pegajoso"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:buttonTint="@color/rojito" />
 
                 <RadioButton
                     android:id="@+id/Group3R2"
@@ -255,7 +274,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Grueso" />
+                    android:text="Grueso"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group3R3"
@@ -263,7 +283,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Seco" />
+                    android:text="Seco"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group3R4"
@@ -271,7 +292,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Blanda" />
+                    android:text="Blanda"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group3R5"
@@ -279,7 +301,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Granuloso" />
+                    android:text="Granuloso"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group3R6"
@@ -287,7 +310,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Acuoso" />
+                    android:text="Acuoso"
+                    android:buttonTint="@color/rojito"/>
 
                 <RadioButton
                     android:id="@+id/Group3R7"
@@ -295,7 +319,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="RadioButtonClicked"
-                    android:text="Con manchas rojas" />
+                    android:text="Con manchas rojas"
+                    android:buttonTint="@color/rojito"/>
             </RadioGroup>
 
             <LinearLayout
@@ -308,7 +333,9 @@
                     android:id="@+id/BotonCancelar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cancelar" />
+                    android:text="Cancelar"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/fondo"/>
 
                 <Space
                     android:layout_width="50dp"
@@ -317,7 +344,9 @@
                     android:id="@+id/BotonGuardar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Guardar" />
+                    android:textColor="@color/black"
+                    android:text="Guardar"
+                    android:backgroundTint="@color/fondo"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

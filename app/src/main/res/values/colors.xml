@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="fondo">#FFF6D2AE</color>//CARDS Y FONDO
+    <color name="letra">#FFEA5A47</color>// Titulos de textos
+    <color name="amarillito">#FFFFECD9</color>//fondos de estadisiticas
+    <color name="rojito">#FFD22F27</color>//Titulo de la pestaña
+    <color name="nombre">#FFF9B08A</color>//Nombre del bebe
 </resources>

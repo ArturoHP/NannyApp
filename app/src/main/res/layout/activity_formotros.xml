@@ -25,6 +25,7 @@
             <TextView
                 android:id="@+id/info_text"
                 android:text="Aqui va NOMB"
+                android:textColor="@color/nombre"
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:background="#FCC78C"
@@ -46,23 +47,25 @@
             android:layout_gravity="center"
             android:textAlignment="center">
 
-            <ImageButton android:id="@+id/panal"
+            <ImageView android:id="@+id/panal"
                 android:layout_margin="5dp"
-                android:src="@mipmap/ic_launcher"
-                android:layout_width="180px"
-                android:layout_height="180px"
+                android:src="@drawable/otros"
+                android:layout_width="130px"
+                android:layout_height="130px"
                 android:contentDescription="icono" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="40sp"
-                android:text="Otros" />
+                android:text="Otros"
+                android:textColor="@color/rojito"/>
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recordatorios"
+            android:textColor="@color/letra"
             android:textAlignment="center"
             android:textSize="30dp"
             android:layout_margin="10dp"
@@ -149,7 +152,9 @@
                 android:id="@+id/BotonCancelar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cancelar" />
+                android:text="Cancelar"
+                android:backgroundTint="@color/nombre"
+                android:textColor="@color/black"/>
 
             <Space
                 android:layout_width="50dp"
@@ -158,7 +163,9 @@
                 android:id="@+id/BotonGuardar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Guardar" />
+                android:text="Guardar"
+                android:backgroundTint="@color/nombre"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </LinearLayout>
 
