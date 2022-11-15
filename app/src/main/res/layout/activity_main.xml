@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30dp"
+        android:text="Nanny App"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Correo Eléctronico"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/initSesionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="#f6d2ae">
+
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:text="Iniciar Sesión" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:textColor="#f6d2ae"
+            android:id="@+id/registerBtn"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="Registrate"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

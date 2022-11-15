@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1043295768266",
+    "firebase_url": "https://botaniccare-2aa92-default-rtdb.firebaseio.com",
+    "project_id": "botaniccare-2aa92",
+    "storage_bucket": "botaniccare-2aa92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043295768266:android:f3ba2913743040e344ae33",
+        "android_client_info": {
+          "package_name": "com.vimdevs.nannyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043295768266-cb65bq8h6bahq3dp6bsf1raq9ph51jmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcVLW0wT6r_UMI6iuE2yZ-MJ2HPWNdwEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043295768266-cb65bq8h6bahq3dp6bsf1raq9ph51jmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043295768266:android:d4dd169a1028294a44ae33",
+        "android_client_info": {
+          "package_name": "com.youi.hellooo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043295768266-cb65bq8h6bahq3dp6bsf1raq9ph51jmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcVLW0wT6r_UMI6iuE2yZ-MJ2HPWNdwEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043295768266-cb65bq8h6bahq3dp6bsf1raq9ph51jmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
