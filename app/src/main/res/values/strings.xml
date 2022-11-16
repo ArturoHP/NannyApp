@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">NannyApp</string>
+
+    <string-array name="color_heces">
+        <item>Negro verdoso</item>
+        <item>Cafe verdoso</item>
+        <item>Amarillo mostaza</item>
+        <item>Verde brillante</item>
+        <item>Blanco</item>
+        <item>Cafe claro</item>
+        <item>Rojo Rosaceo</item>
+        <item>Cafe</item>
+        <item>Verde obscuro</item>
+        <item>Negro</item>
+    </string-array>
 </resources>

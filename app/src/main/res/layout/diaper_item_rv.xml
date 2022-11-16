@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#00000000"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/fechaDiaper"
+            android:hint="Fecha"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/tipoDiaper"
+            android:hint="Que hizo?"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/colorDiaper"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
